@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nadezhdanik audio-player</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <audio src="assets/music/Say I.mp3" class="audio"></audio>
+
+    <div class="container">
+        <div class="player">
+            <div class="screen">
+                <div class="img__wrapper">
+                    <img src="assets/img/img1.jpg" alt="img1" class="img">
+                </div>
+                <div class="title__wrapper">
+                    <p class="title">Say I - CREED</p>
+                    <div class="progress-bar__wrapper">
+                        <p class="duration-time">05:15</p>
+                        <input class="progress-bar" type="range">
+                        <p class="current-time">00:00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="lower-block">
+                <div class="row1">
+                    <svg class="plus button" width="50px" height="50px" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 12H18M12 6V18" stroke="#fff" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                    <svg class="button replay" width="40px" height="40px" viewBox="0 0 48 48" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21 24V18L26 21L31 24L26 27L21 30V24Z" fill="#2F88FF" stroke="#fff" stroke-width="2"
+                            stroke-linejoin="round" />
+                        <path
+                            d="M11.2721 36.7279C14.5294 39.9853 19.0294 42 24 42C33.9411 42 42 33.9411 42 24C42 14.0589 33.9411 6 24 6C19.0294 6 14.5294 8.01472 11.2721 11.2721C9.6141 12.9301 6 17 6 17"
+                            stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M6 9V17H14" stroke="#fff" stroke-width="4" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <div class="row2">
+                    <svg class="button backward" fill="#000000" width="40px" height="40px" viewBox="0 0 24 24"
+                        id="backward" data-name="Flat Line" xmlns="http://www.w3.org/2000/svg" class="icon flat-line">
+                        <path id="secondary" d="M12,6V18L3,12Zm0,6,9,6V6Z" fill="rgb(44, 169, 188)" stroke-width="2">
+                        </path>
+                        <path id="primary" d="M12,6V18L3,12Zm0,6,9,6V6ZM3,4V20" fill="none" stroke="#fff"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                        </path>
+                    </svg>
+                    <svg class="button play" fill="#000000" width="50px" height="50px" viewBox="0 0 24 24" id="play"
+                        data-name="Flat Line" xmlns="http://www.w3.org/2000/svg" class="icon flat-line">
+                        <path id="secondary" d="M12,3a9,9,0,1,0,9,9A9,9,0,0,0,12,3ZM10,16V8l6,4Z" fill="rgb(31,31,31)"
+                            stroke-width="2"></path>
+                        <path id="primary" d="M16,12l-6,4V8ZM12,3a9,9,0,1,0,9,9A9,9,0,0,0,12,3Z" fill="none"
+                            stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                        </path>
+                    </svg>
+                    <svg class="hidden button pause" fill="#000000" width="50px" height="50px" viewBox="0 0 24 24"
+                        id="pause-circle" data-name="Flat Line" xmlns="http://www.w3.org/2000/svg"
+                        class="icon flat-line">
+                        <circle id="secondary" cx="12" cy="12" r="9" fill="rgb(31,31,31)" stroke-width="2">
+                        </circle>
+                        <path id="primary" d="M14,8v8M10,8v8M12,3a9,9,0,1,0,9,9A9,9,0,0,0,12,3Z" fill="none"
+                            stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                        </path>
+                    </svg>
+                    <svg class="button forward" fill="#000000" width="40px" height="40px" viewBox="0 0 24 24"
+                        id="forward" data-name="Flat Line" xmlns="http://www.w3.org/2000/svg" class="icon flat-line">
+                        <path id="secondary" d="M12,12,3,18V6Zm0-6V18l9-6Z"
+                            style="fill: rgb(44, 169, 188); stroke-width: 2;"></path>
+                        <path id="primary" d="M12,12,3,18V6Zm0-6V18l9-6Zm9,14V4" fill="none" stroke="#fff"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                        </path>
+                    </svg>
+                </div>
+                <div class="row3">
+                    <svg class="button minus" width="50px" height="50px" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 12L18 12" stroke="#fff" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>2023 <a class="github-link" href="https://github.com/nadezhdanik" target="_blank">nadezhdanik</a>
+        </p>
+        <a class="rs-link" href="https://rs.school/js-stage0/" target="_blank"><img src="assets/svg/logo.svg"
+                alt="logo"></a>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
